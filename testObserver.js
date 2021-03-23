@@ -308,7 +308,7 @@ function swap(arr, a, b) {
 }
 
 function f1() {
-    let a = [6, 1, 2, 7, 9, 3, 4, 5, 10, 8]
+    let a = [6, 1, 2, 7, 9, 3, 4, 5, 10,8, 8]
     heapSort(a)
     return a
 }
