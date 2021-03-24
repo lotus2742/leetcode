@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1be486e-003c-40f6-bc27-58b9585e3f2c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sorts.js" beforeDir="false" afterPath="$PROJECT_DIR$/sorts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testObserver.js" beforeDir="false" afterPath="$PROJECT_DIR$/testObserver.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tree.js" beforeDir="false" afterPath="$PROJECT_DIR$/tree.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -83,12 +81,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tree.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="59" column="42" selection-start-line="59" selection-start-column="42" selection-end-line="59" selection-end-column="42" />
-              <folding>
-                <element signature="e#38#398#0" />
-                <element signature="e#411#589#0" />
-              </folding>
+            <state relative-caret-position="141">
+              <caret line="131" column="31" lean-forward="true" selection-start-line="131" selection-start-column="31" selection-end-line="131" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -291,12 +285,12 @@
       <workItem from="1602238544090" duration="592000" />
       <workItem from="1610531949277" duration="701000" />
       <workItem from="1614069929537" duration="16447000" />
-      <workItem from="1615777244384" duration="18109000" />
+      <workItem from="1615777244384" duration="20853000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151921000" />
+    <option name="totallyTimeSpent" value="154665000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -326,15 +320,9 @@
     <option name="version" value="1" />
     <option name="exactExcludedFiles">
       <list>
-        <option value="$PROJECT_DIR$/../homesite/server/model/langContent.js" />
-        <option value="$PROJECT_DIR$/../homesite/server/model/db.js" />
-        <option value="$PROJECT_DIR$/../homesite/server/model/langContent.js" />
         <option value="$PROJECT_DIR$/../homesite/server/model/db.js" />
         <option value="$PROJECT_DIR$/../homesite/server/model/montage/category.js" />
-        <option value="$PROJECT_DIR$/../homesite/server/model/montage/category.js" />
-        <option value="$PROJECT_DIR$/../homesite/server/model/montage/category.js" />
-        <option value="$PROJECT_DIR$/../homesite/server/model/montage/category.js" />
-        <option value="$PROJECT_DIR$/../on-operation-merchant/src/router/routers/businessHandle/businessRebate.js" />
+        <option value="$PROJECT_DIR$/../homesite/server/model/langContent.js" />
       </list>
     </option>
   </component>
@@ -628,12 +616,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tree.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="59" column="42" selection-start-line="59" selection-start-column="42" selection-end-line="59" selection-end-column="42" />
-          <folding>
-            <element signature="e#38#398#0" />
-            <element signature="e#411#589#0" />
-          </folding>
+        <state relative-caret-position="141">
+          <caret line="131" column="31" lean-forward="true" selection-start-line="131" selection-start-column="31" selection-end-line="131" selection-end-column="31" />
         </state>
       </provider>
     </entry>

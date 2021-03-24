@@ -82,6 +82,117 @@ function LRD(tree) {
     return output
 }
 
-console.log(DLR(tree))
-console.log(LDR(tree))
+
+// 广度优先
+function BFS() {
+    let output = []
+    let queue = []
+
+    function loopTree(node) {
+        if (node) {
+            output.push(node.data)
+            if (node.left) queue.unshift(node.left)
+            if (node.right) queue.unshift(node.right)
+
+            loopTree(queue.pop())
+        }
+    }
+
+    loopTree(tree)
+
+    return output
+}
+
+// 树的深度
+function getTreeDepth(tree) {
+
+    function computed(node) {
+        let leftDepth = 0
+        let rightDepth = 0
+        if (node) {
+            if (node.left) leftDepth = computed(node.left)
+
+            if (node.right) rightDepth = computed(node.right)
+
+            console.log(leftDepth, rightDepth, node, node.left, node.right)
+
+            return Math.max(leftDepth, rightDepth) + 1
+        }
+    }
+
+    return computed(tree)
+}
+
+
+function DLRNonRes(tree) {
+    let res = []
+    let stack = []
+    while (tree || stack.length > 0) {
+        while (tree) {
+            res.push(tree.data)
+
+            stack.push(tree)
+
+            tree = tree.left
+        }
+        tree = stack.pop()
+        tree = tree.right
+    }
+
+    return res
+}
+
+function LDRNonRes(tree) {
+    let res = []
+    let stack = []
+
+    while (tree || stack.length > 0) {
+        while (tree) {
+            stack.push(tree)
+
+            tree = tree.left
+        }
+
+        tree = stack.pop()
+
+        res.push(tree.data)
+
+        tree = tree.right
+
+    }
+
+    return res
+}
+
+function LRDNonRes(tree) {
+    let res = []
+    let stack = []
+
+    while (tree || stack.length > 0) {
+        while (tree) {
+            stack.push(tree)
+            res.push(tree.data)
+            tree = tree.right
+        }
+
+        tree = stack.pop()
+        tree = tree.left
+    }
+
+    res = res.reverse()
+
+    return res
+}
+// console.log(DLRNonRes(tree))
+// console.log(LDRNonRes(tree))
+console.log(LRDNonRes(tree))
+
+
+// console.log(DLR(tree))
+// console.log(LDR(tree))
 console.log(LRD(tree))
+// console.log(BFS(tree))
+//
+// console.log(getTreeDepth(tree))
+
+
