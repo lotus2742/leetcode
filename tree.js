@@ -183,15 +183,36 @@ function LRDNonRes(tree) {
 
     return res
 }
+
+function BFSNonRes(tree) {
+    let res = []
+    let queue = []
+
+    while (tree || queue.length > 0) {
+
+        res.push(tree.data)
+
+        // console.log(tree.data)
+
+        tree.left && queue.unshift(tree.left)
+        tree.right && queue.unshift(tree.right)
+
+        tree = queue.pop()
+    }
+
+    return res
+}
+
 // console.log(DLRNonRes(tree))
 // console.log(LDRNonRes(tree))
-console.log(LRDNonRes(tree))
+// console.log(LRDNonRes(tree))
+console.log(BFSNonRes(tree))
 
 
 // console.log(DLR(tree))
 // console.log(LDR(tree))
-console.log(LRD(tree))
-// console.log(BFS(tree))
+// console.log(LRD(tree))
+console.log(BFS(tree))
 //
 // console.log(getTreeDepth(tree))
 
